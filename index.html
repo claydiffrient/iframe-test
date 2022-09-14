@@ -33,8 +33,8 @@ Integer lectus nibh, dapibus sed erat et, finibus finibus elit. Quisque sit amet
 Donec dolor magna, lobortis quis lacus efficitur, aliquet luctus ipsum. Integer congue auctor laoreet. Ut ante arcu, vestibulum eu finibus porttitor, sagittis in diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus tincidunt tincidunt. Aliquam euismod, ligula in mollis finibus, urna nisi tincidunt orci, ac fermentum quam nisl ac augue. In hac habitasse platea dictumst. Suspendisse iaculis lectus velit, pretium rutrum dui mollis a.
 </p></div>
         <script>
-      const height = document.body.clientHeight;
-      const width = document.body.clientWidth;
+      const height = document.body.offsetHeight;
+      const width = document.body.offsetWidth;
       window.parent.postMessage({ height, width }, '*');
     </script>
   </body>
