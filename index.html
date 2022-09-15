@@ -35,6 +35,8 @@ Donec dolor magna, lobortis quis lacus efficitur, aliquet luctus ipsum. Integer 
         <script>
       const height = document.body.offsetHeight;
       const width = document.body.offsetWidth;
-      window.parent.postMessage({ height, width }, '*');
+      const scrollHeight = document.body.scrollHeight;
+      const clientHeight = document.body.clientHeight;
+      window.parent.postMessage({ height, width, scrollHeight, clientHeight }, '*');
     </script>
   </body>
